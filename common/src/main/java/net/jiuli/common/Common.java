@@ -1,8 +1,5 @@
 package net.jiuli.common;
 
-/**
- * Created by jiuli on 17-8-16
- */
 
 public class Common {
     public interface Constance {
