@@ -1,0 +1,1 @@
+include ':app', ':common', ':factorylib', ':lang', ':face-res'

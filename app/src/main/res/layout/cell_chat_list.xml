@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/len_2"
+    android:layout_marginTop="@dimen/len_2"
+    android:background="@color/white"
+    android:elevation="-10dp"
+    android:foreground="@drawable/ic_touch_fg"
+    android:paddingBottom="@dimen/len_8"
+    android:paddingEnd="@dimen/len_16"
+    android:paddingStart="@dimen/len_16"
+    android:paddingTop="@dimen/len_8">
+
+    <net.jiuli.common.widget.PortraitView
+        android:id="@+id/portrait"
+        android:layout_width="@dimen/len_40"
+        android:layout_height="@dimen/len_40"
+        android:layout_gravity="start|center_vertical"
+        android:src="@drawable/default_portrait" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginEnd="@dimen/len_60"
+        android:layout_marginStart="@dimen/len_52"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/fontNameSize"
+        tools:text="@string/label_chat_edit_hint" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/len_52"
+        android:layout_marginTop="@dimen/len_24"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:maxLength="32"
+        android:textColor="@color/textSecond"
+        android:textSize="@dimen/font_12"
+        tools:text="@string/appbar_scrolling_view_behavior" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/len_24"
+        android:layout_gravity="end"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:maxLength="25"
+        android:textColor="@color/textSecond"
+        android:textSize="@dimen/font_12"
+        tools:text="17-04-12" />
+
+
+</FrameLayout>

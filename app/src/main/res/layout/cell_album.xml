@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/len_60">
+
+    <ImageView
+        android:id="@+id/im_image"
+        android:layout_width="@dimen/len_60"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1px"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1px"
+        android:layout_marginEnd="@dimen/len_60"
+        android:layout_marginStart="@dimen/len_60"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/len_12"
+        android:textColor="@color/pink_300"
+        android:textSize="7pt"
+        tools:text="@string/label_group_member_select" />
+
+    <ImageView
+        android:layout_width="@dimen/len_40"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginBottom="1px"
+        android:layout_marginEnd="@dimen/len_4"
+        android:padding="@dimen/len_10"
+        android:src="@drawable/next"
+        android:tint="@color/pink_200" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/pink_100" />
+</FrameLayout>

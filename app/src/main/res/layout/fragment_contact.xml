@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="net.jiuli.mim.fragments.main.ContactFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_recycler"
+        android:clipToPadding="false"
+        android:elevation="1dp"
+        android:outlineProvider="bounds"
+        android:paddingBottom="@dimen/len_12"
+        android:paddingTop="@dimen/len_12"
+        android:visibility="gone"
+        tools:targetApi="LOLLIPOP"></android.support.v7.widget.RecyclerView>
+
+    <net.jiuli.common.widget.EmptyView
+        android:id="@+id/contact_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></net.jiuli.common.widget.EmptyView>
+</FrameLayout>

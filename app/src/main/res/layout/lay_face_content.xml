@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:clipToPadding="false"
+    android:paddingLeft="@dimen/len_4"
+    android:paddingRight="@dimen/len_4"
+    android:paddingBottom="@dimen/len_2"
+    android:orientation="vertical" />

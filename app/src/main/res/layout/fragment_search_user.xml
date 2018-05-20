@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.jiuli.mim.fragments.search.SearchUserFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_search_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/len_2"
+        android:paddingTop="@dimen/len_2" />
+
+    <net.jiuli.common.widget.EmptyView
+        android:id="@+id/user_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

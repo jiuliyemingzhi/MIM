@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MIM</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="send">发送</string>
+    <string name="artwork">原图</string>
+    <string name="edit">编辑</string>
+    <string name="back">返回</string>
+    <string name="active">会话</string>
+</resources>

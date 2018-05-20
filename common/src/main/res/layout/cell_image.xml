@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/pink_300"
+    android:paddingBottom="1dp"
+    android:paddingEnd="1dp"
+    android:paddingTop="1dp"
+    tools:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/im_image"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_height="match_parent"
+        android:background="@color/blue_50"
+        android:contentDescription="@string/app_name"
+        android:minWidth="@dimen/len_32"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_shade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_alpha_96"
+        android:gravity="center"
+        android:textColor="@color/pink_300"
+        android:textSize="12pt"
+        android:visibility="gone"
+        tools:text="10"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/cb_select"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/len_4"
+        android:button="@drawable/sel_cb_circle"
+        android:buttonTint="@color/cb_gallery"
+        android:clickable="false"
+        android:drawablePadding="0dp"
+        android:enabled="false"
+        android:padding="0dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_video_sub"
+        android:layout_width="@dimen/len_16"
+        android:layout_height="@dimen/len_16"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/len_4"
+        android:layout_marginStart="@dimen/len_8"
+        android:src="@drawable/video_sub"
+        android:tint="@color/pink_50"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</FrameLayout>

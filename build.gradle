@@ -1,0 +1,69 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+//        google()
+        jcenter()
+        mavenCentral()
+//        maven { url "https://www.jitpack.io" }
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://www.jitpack.io" }
+        maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    //版本号
+    versionCode = 1
+    versionName = '1.0.0'
+
+    //相关依赖库版本
+
+    ossVersion = '2.4.2'
+
+    supportVersion = '27.1.1'
+
+    cardViewVersion = '27.1.1'
+
+    butterknifeVersion = '8.5.1'
+
+    designVersion = '27.1.1'
+
+    glideVersion = '3.7.0'
+
+    circleimageviewVersion = '2.1.0'
+
+    airpanelVersion = '1.1.0'
+
+    geniusVersion = '2.0.0'
+
+    ucropVersoin = "2.2.0-native"
+
+    easypermissionsVersion = "0.4.3"
+
+    retrofit2Version = "2.1.0"
+
+    dbflowVersion = "4.1.1"
+
+    getuiVersion = "2.11.1.0"
+
+    gsonVersion = "2.8.0"
+}
